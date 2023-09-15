@@ -2,8 +2,19 @@
 
 /* Global Styles
 --------------------------*/
+html {
+    box-sizing: border-box;
+  
+}
+*, *::after, *::before {
+        box-sizing: inherit;
+}
 body {
     color:#fff;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
 }
 img {
     width: 300px;
@@ -16,17 +27,37 @@ a:hover {
     text-decoration: none;
 }
 
+h2 {
+    margin: 0;
+}
+
+h1, h2 {
+    font-family: 'Roboto Slab', serif;
+}
+
+.content-wrap {
+    width: 800px;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
 /* Profile
 --------------------------*/
 header {
-    background-color: darkblue;
+    background-color: #233142;
     color: antiquewhite;
+   
+}
+header h1, header h2 {
+    text-shadow: #f95959 2px 2px;
 }
 
 /* Projects
 --------------------------*/
 .projects {
-    background-color: antiquewhite;
+    
+    background-color: #e3e3e3;
+    color: #233142;
 }
 .projects a{
     color:darkgreen;
@@ -37,22 +68,42 @@ header {
     text-decoration: none;
     padding: 8px;
     border-radius: 4px;
+    display: inline-block;
 }
 .projects .btn:hover{
     background: rgba(47, 48, 97, 80%);
 }
 
+.project-item {
+    overflow: hidden;
+    border-bottom: 1px dashed #233142;
+    padding: 25px 0;
+}
+
+.project-item img {
+    float: left;
+    margin-right: 20px;
+}
+
+.project-item h3 {
+    margin-top: 0;
+}
+
 /* Work Experience
 --------------------------*/
 .work {
-    background-color: blueviolet;
+    background-color: #f95959;
+    color: #e3e3e3;
 }
 /* Education
 --------------------------*/
+.education {
+   color: #233142;
+}
 
-/* COntact Info
+/* Contact Info
 --------------------------*/
 footer{
-    background-color: darkgray;
+    background-color: #455d7a;
     color: antiquewhite;
 }
