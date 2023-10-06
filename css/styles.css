@@ -41,6 +41,59 @@ h1, h2 {
     padding: 60px 0;
 }
 
+/* Navigation
+--------------------------*/
+nav {
+    background-color: #233142;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+nav a {
+    text-decoration: none;
+    margin-top: 0.5em;
+    color: antiquewhite;
+    
+}
+
+nav ul {
+    list-style: none;
+    font-family: 'Roboto Slab', serif;
+    text-align: left;
+
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    padding: 2em 3em;
+    
+}
+
+
+nav ul li ul {
+    padding: 0;
+    position: absolute;
+    top: 4em;
+    left: -10000px;
+    width: 175px;
+}
+
+nav ul li ul li {                        
+    background: #555;          
+    display: block;                 
+    color: #fff;                    
+    }
+
+nav ul li ul li:hover { 
+    background: #666; 
+} 
+
+nav ul li:hover ul {                 
+    display: block;                
+    left :0px;                        /
+    }
+
 /* Profile
 --------------------------*/
 header {
